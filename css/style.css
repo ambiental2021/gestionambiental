@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.provinciaTooltip {
+margin-top: 29px;
+margin-left: -50px;
+background-color: transparent;
+font-size: x-small;
+font-family: Tahoma;
+border: none;
+box-shadow: none;
+color: #52240d;
+-webkit-text-stroke: 0.3px green;
+}
+
+#bar {
+  position: absolute;
+  z-index: 2000;
+  margin: 10px;
+  bottom: 210px;
+  padding: 6px;
+  max-width: 200px;
+}
+
+#name_leyenda {
+  position: absolute;
+  z-index: 2000;
+  margin: 10px;
+  bottom: 150px;
+  padding: 6px;
+  max-width: 200px;
+}
+.leyenda {
+  position: absolute;
+  z-index: 2000;
+  bottom: 20px;
+  margin: 0;
+  left: 20px;
+  font-family: Tahoma;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+  padding: 5px;
+}
+
+.leyenda ul {
+  list-style: none;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+}
+.leyenda__item {
+  font-size: small;
+}
+.circulo1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:#d7191c;
+  display: inline-block;
+}
+.circulo2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:#ff7f00;
+  display: inline-block;
+}
+.circulo3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #33a02c;
+  display: inline-block;
+}
+
+.circulo4 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:#2a82ba;
+  display: inline-block;
+}
+
+.leyenda a {
+  text-decoration: none;
+  font-size: small;
+}
+
+
+#overlay {
+  position: absolute;
+  z-index: 2000;
+  margin: 10px;
+  padding: 6px;
+  max-width: 340px;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  color: rgba(122,184,0);
+  font-family: 'Bree Serif', serif;
+  margin: 0px;
+  padding: 5px 8px;
+}
+
+.header p {
+  font-family: 'Bree Serif', serif;
+  padding: 3px 8px;
+  margin: 0px;
+  color: #1a7626;
+}
+.home{ 
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+  color: #76381a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 11px;
+  outline: none;
+  transition: .3s;
+  background-color: white;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.35);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#tituloAtractivo {
+  font-size: large;
+}
+#select-location {
+  width: 150px;
+  font-size: 10px;
+}

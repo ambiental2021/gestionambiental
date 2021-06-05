@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Gerencia de Medio Ambiente</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
+		<link rel="shortcut icon" href="images/ecology.svg">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="js/sicuani.json"></script>
+		<script type="text/javascript" src="js/canchis.json"></script>
+        <script type="text/javascript" src="js/sys.json"></script>
+        <script type="text/javascript" src="js/estados.json"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+        <link rel="stylesheet" href="css/L.Control.MousePosition.css" />
+		<script src = "js/L.Control.MousePosition.js"></script>
+        <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+		<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+		<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script>
+        <link rel="stylesheet" href="css/leaflet-search.css" />
+		<script src = "js/leaflet-search.js"></script>
+	</head>
+	<body>
+        <!--Titulo-->
+        <div id="overlay">
+            <div class='header'>
+            <h2>Gerencia de Gestión Ambiental</h2>
+            <p>Descubre cómo esta agrupado el sistema de saneamiento del distrito de Sicuani.</p>
+            </div>
+            <a href="index.html" class="home"><img src="images/home.svg" alt="home" width="10px">Volver a Inicio</a>
+        </div>
+        <!--bar-->
+        <div id="bar">
+            <a href="https://ambiental2021.github.io/grafico/" class="home"><img src="images/bar.svg" alt="Grafico" width="57px">Ver Grafico</a>
+
+        </div>
+        <!--name_leyenda-->
+        <div id="name_leyenda">
+            <a class="home" >----------Leyenda----------</a>
+
+        </div>
+        
+        <!--Leyenda-->
+        <div class="leyenda">
+            <ul>
+              <li class="leyenda__item"> <div class= "circulo1"></div> Colapsado</li>
+              <li class="leyenda__item"> <div class= "circulo2"></div> Incompleto</li>
+              <li class="leyenda__item"> <div class= "circulo3"></div> Regular</li>
+              <li class="leyenda__item"> <div class= "circulo4"></div> Bueno</li>
+              <li class="leyenda__item"><img src="images/water.svg" alt="icono Fuente" width="15px">Fuente</li>
+              <li class="leyenda__item"><img src="images/reservorio.svg" alt="icono Reservorio" width="15px"> Rerservorio</li>
+              <li class="leyenda__item"><img src="images/house.svg" alt="icono Poblado" width="15px"> Centro Poblado</li>
+            </ul>
+        </div>
+        <!--Map-->
+		<div id="map"></div>
+		<script src="js/app.js"></script>
+
+	</body>
+</html>
