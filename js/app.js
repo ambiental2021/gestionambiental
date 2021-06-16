@@ -202,7 +202,6 @@ var overlayMaps = {
 
 var control = L.control.layers(baseMaps,overlayMaps, {
   collapsed: true,
-  autoZIndex: false,
 }).addTo(map);
 
 // search bar
